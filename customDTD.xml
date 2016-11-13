@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE WORKS [
+<!ENTITY AUTOR "Pavlikhin Sergey" >
+<!ELEMENT NAME (#PCDATA) >
+<!ELEMENT SRC (#PCDATA) >
+<!ELEMENT DIST (#PCDATA) >
+<!ELEMENT IMG (#PCDATA) >
+<!ELEMENT WORK (NAME,SRC?,DIST?,IMG?) >
+<!ATTLIST WORK
+        ID	CDATA	#REQUIRED >
+<!ELEMENT WORKS (WORK+) >
+]>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl" ?>
+<WORKS>
+    <WORK ID="1">
+        <NAME>MathJax</NAME>
+        <SRC>https://github.com/sergeypavlikhin/mathJax</SRC>
+        <DIST>https://sergeypavlikhin.github.io/mathJax</DIST>
+    </WORK>
+    <WORK ID="2">
+        <NAME>Validate Brackets</NAME>
+        <SRC>https://github.com/sergeypavlikhin/validateBrackets</SRC>
+        <DIST>https://sergeypavlikhin.github.io/validateBrackets</DIST>
+    </WORK>
+</WORKS>
